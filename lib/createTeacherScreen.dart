@@ -85,10 +85,10 @@ class _CreateUserScreenState extends State<CreateTeacherScreen> {
                     height: 10.0,
                   ),
                   // ignore: deprecated_member_use
-                  Container(
+                  SizedBox(
                     height: 50,
                     width: 500,
-                    child: RaisedButton(
+                    child: TextButton(
                       onPressed: () async {
                         if (_formKey.currentState.validate()) {
                           var teacher = Teacher(

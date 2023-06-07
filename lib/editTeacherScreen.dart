@@ -89,7 +89,7 @@ class EditTeacherScreen extends StatelessWidget {
                   SizedBox(
                     height: 50,
                     width: 500,
-                    child: RaisedButton(
+                    child: TextButton(
                       onPressed: () async {
                         if (_formKey.currentState.validate()) {
                           var teacher = Teacher(

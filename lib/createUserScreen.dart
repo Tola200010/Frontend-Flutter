@@ -82,7 +82,7 @@ class _CreateUserScreenState extends State<CreateUserScreen> {
                     height: 10.0,
                   ),
                   // ignore: deprecated_member_use
-                  RaisedButton(
+                  TextButton(
                     onPressed: () async {
                       if (_formKey.currentState.validate()) {
                         UserAuthentication obj = UserAuthentication(

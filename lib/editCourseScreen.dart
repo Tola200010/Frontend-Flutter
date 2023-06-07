@@ -177,7 +177,7 @@ class _EditCourseScreenState extends State<EditCourseScreen> {
                   SizedBox(
                     height: 50,
                     width: 500,
-                    child: RaisedButton(
+                    child: TextButton(
                       onPressed: () async {
                         if (_formKey.currentState.validate()) {
                           Course course = Course(

@@ -123,7 +123,7 @@ class _CreateStudentScreenState extends State<CreateStudentScreen> {
             SizedBox(
               height: 50,
               width: 500,
-              child: RaisedButton(
+              child: TextButton(
                 onPressed: () async {
                   if (_formKey.currentState.validate()) {
                     Student student = Student(

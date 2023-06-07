@@ -25,7 +25,8 @@ class HomeScreen extends StatelessWidget {
 
   AppBar get customAppBar {
     return AppBar(
-      title: const Text("ENROLLMENT SETEC"),
+      backgroundColor: Colors.green,
+      title: const Text("ENROLLMENT"),
       actions: [
         IconButton(
           icon: const Icon(
@@ -118,8 +119,8 @@ class HomeScreen extends StatelessWidget {
                 )
               ],
             )),
-        Flexible(flex: 1, child: Container(color: Colors.lightBlue)),
-        Flexible(flex: 1, child: Container(color: Colors.black26))
+        Flexible(flex: 1, child: Container(color: Colors.greenAccent)),
+        Flexible(flex: 1, child: Container(color: Colors.lightGreen))
       ],
     );
   }

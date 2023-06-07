@@ -115,8 +115,8 @@ Future<List<Course>> getCourse() async {
 }
 
 Future<http.Response> deleteCourse(int id) async {
-  final response =
-      await http.delete(Uri.parse(ApiService.apiAddress+"course/" + id.toString()));
+  final response = await http
+      .delete(Uri.parse(ApiService.apiAddress + "course/" + id.toString()));
   return response;
 }
 
@@ -128,8 +128,8 @@ customDialog(BuildContext buildContext, String title, String message,
             title: Text(title),
             content: Text(message),
             actions: [
-              FlatButton(onPressed: onOkPress, child: const Text("Yes")),
-              FlatButton(
+              TextButton(onPressed: onOkPress, child: const Text("Yes")),
+              TextButton(
                   onPressed: () {
                     Navigator.of(buildContext).pop("Cancel");
                   },

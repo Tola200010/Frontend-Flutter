@@ -130,8 +130,8 @@ customShowDialog(BuildContext buildContext, String title, String message,
             title: Text(title),
             content: Text(message),
             actions: [
-              FlatButton(onPressed: onOkPress, child: const Text("Yes")),
-              FlatButton(
+              TextButton(onPressed: onOkPress, child: const Text("Yes")),
+              TextButton(
                   onPressed: () {
                     Navigator.of(buildContext).pop("Cancel");
                   },
